@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ 	android:orientation="vertical"
+ 	>
+
+   
+  
+     <!-- Top  -->
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="#ffffff"
+        >
+        <TextView
+            android:text="返回"
+            android:textColor="#000000"
+            android:textSize="16dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+             />
+          <TextView
+            android:text="分享"
+            android:textColor="#000000"
+            android:textSize="16dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"
+            android:id="@+id/share" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+           
+            />
+        <TextView 
+           android:id="@+id/fresh"
+            android:text="留言"
+            android:textColor="#000000"
+            android:textSize="22dip"
+            android:gravity="center"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/share"
+            android:layout_toRightOf="@id/back"
+            />
+       
+    </RelativeLayout>
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/activity_bg"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="5dip">
+        <EditText 
+            android:hint="欢迎留言@Forsta 字数限制140字"
+            android:id="@+id/message"
+            android:layout_width="fill_parent"
+            android:layout_height="100dip"
+            android:maxLength="140"
+            android:shadowRadius="5"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dip"
+            android:padding="5dip"/>
+        <Button 
+            
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/publish_button_32"
+            android:layout_below="@id/message"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"/>
+    </RelativeLayout>
+    
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">城市AQI</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <!-- activity_main.xml -->
+    <string name="radioname1">主页</string>
+    <string name="radioname2">区域</string>
+    <string name="radioname3">排名</string>
+    <string name="radioname4">设置</string>
+</resources>

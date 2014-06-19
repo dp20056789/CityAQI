@@ -1,0 +1,173 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ 	android:orientation="vertical"
+ 	>
+
+   
+  
+     <!-- Top  -->
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="#ffffff"
+        >
+        <TextView
+            android:text="返回"
+            android:textColor="#000000"
+            android:textSize="16dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+             />
+          <TextView
+            android:text="分享"
+            android:textColor="#000000"
+            android:textSize="16dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"
+            android:id="@+id/share" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+           
+            />
+        <TextView 
+           android:id="@+id/fresh"
+            android:text="帮助"
+            android:textColor="#000000"
+            android:textSize="22dip"
+            android:gravity="center"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/share"
+            android:layout_toRightOf="@id/back"
+            />
+       
+    </RelativeLayout>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="@drawable/activity_bg"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="5dip">
+        
+     <TextView 
+         android:text="1.空气质量指数"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:textColor="#ffffff"
+         android:textStyle="bold"
+         android:textSize="18dip"/>
+     <TextView 
+         android:text="    空气质量指数（Air Quality Index，简称AQI）是定量描述空气质量状况的无量纲指数。针对单项污染物的还规定了空气质量分指数。参与空气质量评价的主要污染物为细颗粒物、可吸入颗粒物、二氧化硫、二氧化氮、臭氧、一氧化碳等六项。"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:textColor="#ffffff"
+         android:textSize="16dip"/>
+     
+     <TextView 
+         android:text="2.分级"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:textColor="#ffffff"
+         android:textStyle="bold"
+         android:textSize="18dip"/>
+     <TextView 
+         android:text="    根据《环境空气质量指数（AQI）技术规定（试行）》（HJ 633—2012）规定：空气污染指数划分为0－50、51－100、101－150、151－200、201－300和大于300六档，对应于空气质量的六个级别，指数越大，级别越高，说明污染越严重，对人体健康的影响也越明显。"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:textColor="#ffffff"
+         android:textSize="16dip"/>
+     
+      <!-- 空气质量指示表 -->
+	      <FrameLayout
+              
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        >
+       
+        <LinearLayout 
+            
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:orientation="horizontal"
+           >
+            
+                <TextView 
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:layout_width="0dip"
+                android:layout_height="45dip"
+                android:layout_weight="1"
+                android:background="#7CFC00"
+                android:text="优"/>
+              	<TextView
+              	android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:layout_width="0dip"
+                android:layout_height="45dip"
+                android:layout_weight="1"
+                android:background="#EEEE00"
+                android:text="良"/>
+                <TextView 
+                 android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:layout_width="0dip"
+                android:layout_height="45dip"
+                android:layout_weight="1"
+                android:background="#FF7F24"
+                android:text="轻度"/>
+                <TextView
+                 android:gravity="center"
+                 android:textColor="#000000"
+                android:textSize="14dp"
+                android:layout_width="0dip"
+                android:layout_height="45dip"
+                android:layout_weight="1"
+                android:background="#FF0000"
+                android:text="中度"/>
+                <TextView
+                android:gravity="center"
+                 android:textColor="#000000"
+                android:textSize="14dp"
+                android:layout_width="0dip"
+                android:layout_height="45dip"
+                android:layout_weight="1"
+                android:background="#CD69C9"
+                android:text="重度"/>
+                <TextView
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:layout_width="0dip"
+                android:layout_height="45dip"
+                android:layout_weight="1"
+                android:background="#9400D3"
+                android:text="严重"/>
+        </LinearLayout>
+        
+        </FrameLayout>
+    </LinearLayout>
+    
+</LinearLayout>
